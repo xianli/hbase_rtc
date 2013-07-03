@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+	<Table name="HB_SHOP_DAILY_DETAIL" rowkey="int,int">
+		<Column name="PV" type="int"  familyName="d" />
+		<Column name="UV"  type="int"  familyName="d"/>
+		<Column name="CollectNum"   type="int"  familyName="d" />
+		<Column name="CustOrdNum"     type="double"   familyName="d"/>
+		<Column name="OrdNum"   type="int"  familyName="d"/>
+		<Column name="OrdProNum"   type="int"  familyName="d" />
+		<Column name="OrdAmt"   type="double"   familyName="d"/>
+		<Column name="OrdCustNum"   type="int"  familyName="d" />
+		<Column name="CustPriceAvg"   type="double"  familyName="d" />
+		<Column name="OnlProNum"  type="int"  familyName="d" />
+		<Column name="OrdProAvg"  type="double"  familyName="d" />
+		<Column name="CustRate"  type="double"   familyName="d" />
+		<Column name="OrdRate"  type="double"   familyName="d" />
+		<Column name="Time"     type="int"   familyName="d" />
+		<Column name="UVTimes"  type = "int" familyName="d" />	
+	</Table>
+	
+	<Table name="HB_SHOP_WEEK_DETAIL" rowkey="int,int">
+		<Column name="PV"    type="int"     familyName="d" />
+		<Column name="UV"    type="int"    familyName="d"  />
+		<Column name="CollectNum"     type="int"     familyName="d"  />
+		<Column name="CustOrdNum"     type="double"   familyName="d" /> 
+		<Column name="OrdNum"    type="int"      familyName="d" />
+		<Column name="OrdProNum"    type="int"     familyName="d"  />
+		<Column name="OrdAmt"    type="double"     familyName="d"  />
+		<Column name="OrdCustNum"    type="int"      familyName="d"  />
+		<Column name="OrdProAvg"     type="double"     familyName="d"  />
+		<Column name="CustPriceAvg"     type="double"     familyName="d"  />
+		<Column name="OnlProNum"    type="int"     familyName="d" />
+		<Column name="OrdProNumAvg"     type="int"      familyName="d"  />
+		<Column name="CustRate"     type="double"      familyName="d"  />
+		<Column name="OrdRate"     type="double"    familyName="d"  />
+		<Column name="Time"     type="int"   familyName="d" />
+		<Column name="UVTimes"  type = "int" familyName="d" />
+	</Table>
+	
+	<Table name="HB_SHOP_MON_DETAIL" rowkey="int,int">
+		<Column name="PV"    type="int"     familyName="d" />
+		<Column name="UV"    type="int"    familyName="d"  />
+		<Column name="CollectNum"     type="int"     familyName="d"  />
+		<Column name="CustOrdNum"     type="double"   familyName="d" /> 
+		<Column name="OrdNum"    type="int"      familyName="d" />
+		<Column name="OrdProNum"    type="int"     familyName="d"  />
+		<Column name="OrdAmt"    type="double"     familyName="d"  />
+		<Column name="OrdCustNum"    type="int"      familyName="d"  />
+		<Column name="OrdProAvg"     type="double"     familyName="d"  />
+		<Column name="CustPriceAvg"     type="double"     familyName="d"  />
+		<Column name="OnlProNum"    type="int"     familyName="d" />
+		<Column name="OrdProNumAvg"     type="int"      familyName="d"  />
+		<Column name="CustRate"     type="double"      familyName="d"  />
+		<Column name="OrdRate"     type="double"    familyName="d"  />
+		<Column name="Time"     type="int"   familyName="d" />
+		<Column name="UVTimes"  type = "int" familyName="d" />
+	</Table>
+	<Table name="HB_SHOP_PRO_STAT" rowkey="int,int">
+		<Column name="OnlProNum"  type="int"    familyName="d" />
+		<Column name="PV"  type="int"    familyName="d" />
+		<Column name="UV"  type="int"     familyName="d" />
+		<Column name="OrdNum"  type="int"     familyName="d" />
+		<Column name="OrdAmt"  type="double"    familyName="d"   />
+		<Column name="OrdProType"  type="int"    familyName="d" />
+		<Column name="OrdProNum"  type="int"     familyName="d" />
+		<Column name="OrdCustNum"  type="int"    familyName="d" />
+		<Column name="UVTimes"  type = "int" familyName="d" />
+	</Table>
+	<Table name="HB_PRO_DAILY_TOP" rowkey="int,int,int,byte">
+		<Column name="PV"  type="long,string,int"    familyName="d" />
+		<Column name="UV"  type="long,string,int"    familyName="d" />
+		<Column name="CollectNum"  type="long,string,int"   familyName="d" />
+		<Column name="OrdProNum"  type="long,string,int"     familyName="d" />
+		<Column name="OrdAmt"  type="long,string,double"    familyName="d"   />
+		<Column name="UVTimes"  type = "long,string,int" familyName="d" />
+	</Table>
+	<Table name="HB_PRO_DAILY_BOTTOM" rowkey="int,int,int,byte">
+		<Column name="PV"  type="long,string,int"    familyName="d" />
+		<Column name="UV"  type="long,string,int"   familyName="d" />
+		<Column name="CollectNum"  type="long,string,int"    familyName="d" />
+		<Column name="OrdProNum"  type="long,string,int"   familyName="d" />
+		<Column name="OrdAmt"  type="long,string,double"   familyName="d"   />
+		<Column name="UVTimes"  type = "long,string,int" familyName="d" />
+	</Table>
+	
+	<Table name="HB_SHOP_SALE_STAT" rowkey="int,int,byte">
+		<Column name="UPV_RNG"  type="string"    familyName="d" />
+		<Column name="UPV_QTY"  type="int"   familyName="d" />
+		<Column name="UPV_PV"  type="int"    familyName="d" />
+		<Column name="UPV_UV"  type="int"   familyName="d" />
+		<Column name="UPV_OPN"  type="int"   familyName="d"   />
+		<Column name="UPV_OA"  type = "double" familyName="d" />
+		<Column name="OPN_RNG"  type="string"    familyName="d" />
+		<Column name="OPN_QTY"  type="int"   familyName="d" />
+		<Column name="OPN_PV"  type="int"    familyName="d" />
+		<Column name="OPN_UPV"  type="int"   familyName="d" />
+		<Column name="OPN_UV"  type="int"   familyName="d"   />
+		<Column name="OPN_OA"  type = "double" familyName="d" />
+	</Table>
+	
+	
+	<Table name="HB_PRO_SALE_DETAIL" rowkey="int,int,int,byte">
+		<Column name="ProID"    type="long"     familyName="d" />
+		<Column name="ProName"    type="string"    familyName="d" />
+		<Column name="OnlDate"    type="long"    familyName="d" />
+		<Column name="PV"    type="int"    familyName="d" />
+		<Column name="UV"    type="int"    familyName="d" />
+		<Column name="PriceAvg"     type="double"    familyName="d"   />
+		<Column name="CollectNum"    type="int"    familyName="d" />
+		<Column name="OrdProNum"    type="int"    familyName="d" />
+		<Column name="OrdNum"    type="int"    familyName="d" />
+		<Column name="OrdAmt"    type="double"    familyName="d"   />
+		<Column name="ProVolRate"    type="double"    familyName="d"   />
+		<Column name="UVTimes"  type = "int" familyName="d" />
+		<Column name="ItemNum"    type="string"    familyName="d" />
+	</Table>
+	<Table name="HB_SALE_FLOW" rowkey="int,int,byte,long">
+		<Column name="ProID"  type ="long" familyName="d"   />
+		<Column name="ProName"  type ="string" familyName="d"   />
+		<Column name="Promo"  type ="string" familyName="d"   />
+		<Column name="PV"  type ="int" familyName="d"  />
+		<Column name="UV"  type ="int" familyName="d"  />
+		<Column name="CollectNum"  type ="int" familyName="d"  />
+		<Column name="OrdNum"  type ="int" familyName="d"  />
+		<Column name="OrdAmt"  type ="double" familyName="d"    />
+		<Column name="OrdPrdType"  type ="int" familyName="d"  />
+		<Column name="OrdPrdNum"  type ="int" familyName="d"  />
+		<Column name="OrdCustNum"  type ="int" familyName="d"  />	
+		<Column name="Time"     type="int"   familyName="d" />
+		<Column name="UVTimes"  type = "int" familyName="d" />
+	</Table>
+	<Table name="HB_SHOP_VISITS" rowkey="int,int">
+		<Column name="PV"    type="int"    familyName="d" />
+		<Column name="UV"    type="int"    familyName="d" />
+		<Column name="UVTimes"    type="int"    familyName="d" />
+		<Column name="Time"     type="int"   familyName="d" />
+		<Column name="AvgStayTime"     type="double"   familyName="d" />
+		<Column name="AvgDepth"     type="double"   familyName="d" />
+	</Table>
+	<Table name="HB_SHOP_VISITS_CLASS" rowkey="int,int,int">
+		<Column name="PV"    type="int"    familyName="d" />
+		<Column name="UV"    type="int"    familyName="d" />
+		<Column name="UVTimes"    type="int"    familyName="d" />
+		<Column name="Time"     type="int"   familyName="d" />
+	</Table>
+	<Table name="HB_SHOP_VISITS_SOURCE_STAT" rowkey="int,int">
+		<Column name="SRC"  type ="int" familyName="d"   />
+		<Column name="PV"  type ="int" familyName="d"   />
+		<Column name="PVPCNT"  type ="double" familyName="d"     />
+	</Table>
+	<Table name="HB_SHOP_VISITS_SOURCE" rowkey="int,int,int">
+		<Column name="PV"  type ="int" familyName="d"  />
+		<Column name="PVPCNT"  type ="double" familyName="d"    />
+		<Column name="Time"  type="int" familyName="d"    />
+	</Table>
+	<Table name="HB_SHOP_VISITS_FREQ" rowkey="int,int">
+		<Column name = "UVTimes" type ="int" familyName="d" />
+		<Column name = "UV" type ="int" familyName="d" />
+		<Column name = "UVRatio" type ="double" familyName="d"/>
+	</Table>
+	
+	<Table name="HB_CUST_SCALE_MONTH" rowkey="int,int">
+		<Column name="CustLevelId" type ="int" familyName="d" />
+		<Column name="CustLevelName" type ="string" familyName="d" />
+		<Column name="CustSum" type ="int" familyName="d" />
+		<Column name="CustSumY" type ="int" familyName="d"/>
+	</Table>
+	
+	<Table name="HB_DIM_SHOP_PRODUCT" rowkey="int,byte">
+		<Column name="SPUID" type ="long" familyName="d" />
+		<Column name="ITEMNUM" type ="long" familyName="d" />
+		<Column name="SKUIDS" type ="long" familyName="d" />
+	</Table>
+	
+	<Table name="HB_SHOP_PRO_COUP_STAT" rowkey="int,int">
+		<Column name="OrdNum" type ="int" familyName="d" />
+		<Column name="OrdProNum" type ="int" familyName="d" />
+		<Column name="OrdAmt" type ="double" familyName="d" />
+		<Column name="CoupAmt" type ="double" familyName="d" />
+		<Column name="PV" type ="int" familyName="d" />
+		<Column name="UV" type ="int" familyName="d" />
+		<Column name="UPV" type ="int" familyName="d" />
+	</Table>
+	
+	<Table name="HB_SHOP_PRO_COUP" rowkey="int,int,int">
+		<Column name="OrdNum" type ="int" familyName="d" />
+		<Column name="OrdProNum" type ="int" familyName="d" />
+		<Column name="OrdAmt" type ="double" familyName="d" />
+		<Column name="CoupAmt" type ="double" familyName="d" />
+		<Column name="Time" type ="int" familyName="d" />
+	</Table>
+	
+	<Table name="HB_MAPPING" rowkey="int">
+		<Column name="KV"  type ="int,string,int" familyName="d" />
+	</Table>
+	<Table name="HB_PK_FK" rowkey="int">
+		<Column name="KV"  type ="int,int" familyName="d"  />
+	</Table>
+	
+	<!--买家分析-->
+	<Table name="HB_SHOP_CUST_BUY" rowkey="int,int">
+		<Column name="OrdNum" type ="string,int" familyName="d" />
+		<Column name="OrdProNum" type ="string,int" familyName="d" />
+		<Column name="OrdAmt"  type="string,double" familyName="d" />
+	</Table>
+
+	<!--区域分析-->
+	<Columns for="getShopCustArea" tablename="HB_SHOP_CUST_AREA">
+		<Column name="Country"  refid="Country"  type = "int"  choose="all"  familyName="d"/>
+		<Column name="Province"  refid="Province"  type = "int"  choose="all"  familyName="d"/>
+		<Column name="UV"  refid="UV"  type = "int"  choose="all"  familyName="d"/>
+		<Column name="PV"  refid="PV"  type = "int"  choose="all"  familyName="d"/>
+		<Column name="UPV"  refid="UPV"  type = "int"  choose="all"  familyName="d"/>
+		<Column name="OrdCustNum"  refid="OrdCustNum"  type = "int"  choose="all"  familyName="d"/>
+		<Column name="OrdProNum"  refid="OrdProNum"  type = "int"  choose="all"  familyName="d"/>
+	</Columns>
+	<Table name="HB_SHOP_CUST_AREA" rowkey="int,int">
+		<Column name="Country" type ="int" familyName="d" />
+		<Column name="Province" type ="int" familyName="d" />
+		<Column name="PV"  type="int" familyName="d" />
+		<Column name="UV"  type="int" familyName="d" />
+		<Column name="UPV"  type="int" familyName="d" />
+		<Column name="OrdCustNum"  type="int" familyName="d" />
+		<Column name="OrdProNum"  type="int" familyName="d" />
+	</Table>
+	
+	<!-- 团购分析 -->
+	<Table name="HB_TEAM_SALE" rowkey="int,byte,long,int">
+		<Column name="ProName" type ="string" familyName="d" />
+		<Column name="PV" type ="int" familyName="d" />
+		<Column name="UPV" type ="int" familyName="d" />
+		<Column name="UV" type ="int" familyName="d" />
+		<Column name="PurchaseOrderNum" type ="int" familyName="d" />
+		<Column name="PurchaseNum" type ="int" familyName="d" />
+		<Column name="PurchaseAmt" type ="double" familyName="d" />
+		<Column name="PayedOrderNum" type ="int" familyName="d" />
+		<Column name="PayedNum" type ="int" familyName="d" />
+		<Column name="PayedAmt" type ="double" familyName="d" />
+		<Column name="CancelOrderNum" type ="int" familyName="d" />
+		<Column name="CancelNum" type ="int" familyName="d" />
+		<Column name="CancelAmt" type ="double" familyName="d" />
+		<Column name="CouponAmt" type ="double" familyName="d" />
+		<Column name="TodayPayedOrderNum" type ="int" familyName="d" />
+		<Column name="TodayPayedNum" type ="int" familyName="d" />
+		<Column name="TodayPayedAmt" type ="double" familyName="d" />
+		<Column name="DelayPayedOrderNum" type ="int" familyName="d" />
+		<Column name="DelayPayedNum" type ="int" familyName="d" />
+		<Column name="DelayPayedAmt" type ="double" familyName="d" />
+		<Column name="NotPayedOrderNum" type ="int" familyName="d" />
+		<Column name="NotPayedNum" type ="int" familyName="d" />
+		<Column name="NotPayedAmt" type ="double" familyName="d" />
+		<Column name="TeamID" type ="long" familyName="d" />
+		<Column name="ItemNum" type ="string" familyName="d" />
+		<Column name="TotalPrice" type ="double" familyName="d" />
+		<Column name="CouponAmt" type ="double" familyName="d" />
+		<Column name="RealPrice" type ="double" familyName="d" />
+		<Column name="AvgStayTime" type ="double" familyName="d" />
+		<Column name="TeamStartTime" type ="string" familyName="d" />
+		<Column name="TeamEndTime" type ="string" familyName="d" />
+		<Column name="Time" type ="int" familyName="d" />			
+	</Table>
+	
+	<!-- TEAM&SPU -->
+	<Table name="HB_DIM_TEAM_SKU" rowkey="long">
+		<Column name="SKUID" type ="long" familyName="d" />
+		<Column name="SPUID" type ="long" familyName="d" />		
+		<Column name="CreateTime" type ="long" familyName="d" />
+		<Column name="ModifyTime" type ="long" familyName="d" />
+	</Table>
+	
+	<!-- SPU&SKU维表 -->
+	<Table name="HB_DIM_SPU_SKU" rowkey="long">
+		<Column name="SKUID" type ="long" familyName="d" />
+	</Table>
+	
+	<!-- 团购商品 -->
+	<Table name="HB_DIM_TEAM_SHOP_PRO" rowkey="int,int">
+		<Column name="ProID" type ="long" familyName="d" />
+		<Column name="ProName" type ="string" familyName="d" />
+	</Table>
+	
+	<!--库存简报-->
+	<Table name="HB_SHOP_PRO_STORE" rowkey="int,int,int">
+		<Column name="NumRK" type ="int" familyName="d" />
+		<Column name="NumKC" type ="int" familyName="d" />
+		<Column name="NumCK" type ="int" familyName="d" />
+		<Column name="NumTK" type ="int" familyName="d" />
+		<Column name="SaleAmt" type ="double" familyName="d" />
+		<Column name="KCAmt" type ="double" familyName="d" />
+		<Column name="ProDX" type ="int" familyName="d" />
+		<Column name="ProZX" type ="int" familyName="d" />
+		<Column name="ProCK" type ="int" familyName="d" />
+		<Column name="ZZL" type ="double" familyName="d" />
+		<Column name="ZZTS" type ="double" familyName="d" />
+		<Column name="ZZCS" type ="double" familyName="d" />
+		<Column name="DXL" type ="double" familyName="d" />
+	</Table>
+	
+	<!--<Table name="HB_SHOP_PRO_STORE_TREND" rowkey="int,int,int">
+		<Column name="NumRK" type ="int" familyName="d" />
+		<Column name="NumKC" type ="int" familyName="d" />
+		<Column name="NumCK" type ="int" familyName="d" />
+		<Column name="NumTK" type ="int" familyName="d" />
+		<Column name="SaleAmt" type ="double" familyName="d" />
+		<Column name="KCAmt" type ="double" familyName="d" />
+		<Column name="ProDX" type ="int" familyName="d" />
+		<Column name="ProZX" type ="int" familyName="d" />
+		<Column name="ProCK" type ="int" familyName="d" />
+		<Column name="ZZL" type ="double" familyName="d" />
+		<Column name="ZZTS" type ="double" familyName="d" />
+		<Column name="ZZCS" type ="double" familyName="d" />
+		<Column name="DXL" type ="double" familyName="d" />
+		<Column name="Time" type ="int" familyName="d" />
+	</Table>-->	
+
+	<!-- 售后简报 -->
+	<Table name="HB_SHOP_SERVICE_ORD" rowkey="int,int">
+		<!-- 
+		 <Column name="TimeId" type ="int" familyName="d" />
+		 -->
+		<Column name="NumTH" type ="int" familyName="d" />
+		<Column name="AmtTH" type ="double" familyName="d" />
+		<Column name="NumFX" type ="int" familyName="d" />
+		<Column name="AmtFX" type ="double" familyName="d" />
+		<Column name="NumHH" type ="int" familyName="d" />
+		<Column name="AmtHH" type ="double" familyName="d" />
+		<Column name="NumTS" type ="int" familyName="d" />
+	</Table>
+	
+	<!-- pop商家评分结果表 -->
+	<Table name="HB_VENDER_RATE" rowkey="int,int,int,int">
+		<Column name="TypeId" type ="int" familyName="d" />
+		<Column name="GradePoint" type ="string" familyName="d" />
+		<Column name="Sale" type ="double" familyName="d" />
+		<Column name="Ware" type ="double" familyName="d" />
+		<Column name="DealOrder" type ="double" familyName="d" />
+		<Column name="DelOrder" type ="double" familyName="d" />
+		<Column name="Afs" type ="double" familyName="d" />
+		<Column name="Complaint" type ="double" familyName="d" />
+		<Column name="Whole" type ="double" familyName="d" />
+	</Table>
+	
+	<!-- pop行业评分占比 -->
+	<Table name="HB_VENDER_ACCOUNTED" rowkey="int,int,int">
+		<Column name="TypeId" type ="int" familyName="d" />
+		<Column name="TypeName" type ="string" familyName="d" />
+		<Column name="IndexType" type ="string" familyName="d" />
+		<Column name="IndexInterval" type ="string" familyName="d" />
+		<Column name="Quantity" type ="int" familyName="d" />
+		<Column name="Accounted" type ="double" familyName="d" />
+	</Table>
+	<!-- pop商家排名 -->
+	<!-- 只有综合评分的rankrate值是打败多少的值，其他的对应的都是位于多少的值 -->
+	<Table name="HB_VENDER_RANK" rowkey="int,int,int">
+		<Column name="TypeId" type ="int" familyName="d" />
+		<Column name="TypeName" type ="string" familyName="d" />
+		<Column name="IndexType" type ="string" familyName="d" />
+		<Column name="RankNum" type ="int" familyName="d" />
+		<Column name="RankRate" type ="double" familyName="d" />
+	</Table>
+	
+	<!-- 配送分析-配送简报 -->
+	<Table name="HB_SHOP_DELIVERY" rowkey="int,int,int">
+		<Column name="DeliveryNum" type ="int" familyName="d" />
+		<Column name="CompleteNum" type ="int" familyName="d" />
+		<Column name="RefuseNum"  type="int" familyName="d" />
+		<Column name="RedeliveryNum"  type="int" familyName="d" />
+		<Column name="BrokenNum"  type="int" familyName="d" />
+		<Column name="BrokenPrice"  type="double" familyName="d" />
+		<Column name="DelayNum"  type="double" familyName="d" />
+		<Column name="TotalDeliveryTime"  type="double" familyName="d" />
+		<Column name="AvgDeliveryTime"  type="double" familyName="d" />
+		
+	</Table>
+	
+	<!-- 广告效果评估-->
+	<Table name="HB_POP_ADV_EVL" rowkey="int,int,byte">
+		<Column name="DispProdNum"  type="int"    familyName="d" />
+		<Column name="DispCount"  type="int"   familyName="d" />
+		<Column name="AdvClickNum"  type="int"    familyName="d" />
+		<Column name="AttractPV"  type="int"   familyName="d" />
+		<Column name="AttractUV"  type="int"   familyName="d"   />
+		<Column name="AttractNewUV"  type = "int" familyName="d" />
+		<Column name="AttractOrdNum"  type="int"    familyName="d" />
+		<Column name="AttractOrdAmt"  type="double"   familyName="d" />
+		<Column name="OrdNum"  type="int"    familyName="d" />
+		<Column name="StrOrdRate"  type="double"   familyName="d" />
+		<Column name="AdvOrdRate"  type="double"   familyName="d"   />
+		<Column name="AdvPVRate"  type = "double" familyName="d" />
+		<Column name="AdvUVRate"  type = "double" familyName="d" />
+		<Column name="SearchNum"  type="int"    familyName="d" />
+		<Column name="SearchRate"  type = "double" familyName="d" />
+		<Column name="SearchClickRate"  type = "double" familyName="d" />
+		<Column name="PV" type="int"  familyName="d" />
+		<Column name="UV"  type="int"  familyName="d"/>
+	</Table>
+	
+	<!--店铺广告投放信息统计-->
+	<Table name="HB_POP_ADV_STAT" rowkey="int,int,int,string">
+		<Column name="adPrice" type ="double" familyName="d" />
+		<Column name="showTimes" type ="int" familyName="d" />
+		<Column name="clickCounts" type ="int" familyName="d" />
+		<Column name="viewCounts" type ="int" familyName="d" />
+		<Column name="viewerCounts" type ="int" familyName="d" />
+		<Column name="newviewerCounts" type ="int" familyName="d" />
+	</Table>
+	<!--单品广告播放效果统计-->
+	<Table name="HB_POP_ADV_ROI" rowkey="int,int,int,string">
+		<Column name="adContents" type ="string" familyName="d" />
+		<Column name="singlePrice" type ="double" familyName="d" />
+		<Column name="adPrice" type ="double" familyName="d" />
+		<Column name="showTimes" type ="int" familyName="d" />
+		<Column name="clickCounts" type ="int" familyName="d" />
+	</Table>
+	<!--网站广告位日均流量统计-->
+	<Table name="HB_POP_ADV_TRAFFIC" rowkey="int,string">
+		<Column name="perdayFlow" type ="double" familyName="d" />
+		<Column name="perdayMoney" type ="double" familyName="d" />
+		<Column name="cpmMoney" type ="double" familyName="d" />
+	</Table>
+	
+	<!--广告申请类型-->
+	<Table name="HB_POP_ADV_APPL" rowkey="int,int,byte,byte,byte">
+		<Column name="AdvCost" type ="double" familyName="d" />
+		<Column name="DispProdNum" type ="int" familyName="d" />
+		<Column name="DispCount" type ="int" familyName="d" />
+		<Column name="AdvClickNum" type ="int" familyName="d" />
+		<Column name="AttractPV" type ="int" familyName="d" />
+		<Column name="AttractUV" type ="int" familyName="d" />
+		<Column name="AttractNewUV" type ="int" familyName="d" />
+		<Column name="AttractOrdNum" type ="int" familyName="d" />
+		<Column name="AttractOrdAmt" type ="double" familyName="d" />
+	</Table>
+	<!--广告投放内容-->
+	<Table name="HB_POP_ADV_CNTNT" rowkey="int,int,byte,byte">
+		<Column name="AdvLoct" type ="int" familyName="d" />
+		<Column name="AdvSKU" type ="string" familyName="d" />
+		<Column name="AdvCost" type ="double" familyName="d" />
+		<Column name="DispCount" type ="int" familyName="d" />
+		<Column name="AdvClickNum" type ="int" familyName="d" />
+		<Column name="AdvOrdRate" type ="double" familyName="d" />
+		<Column name="OrdNum" type ="int" familyName="d" />
+	</Table>
+	<!--广告关键词-->
+	<Table name="HB_POP_ADV_KW" rowkey="int,int">
+		<Column name="KW" type ="string" familyName="d" />
+		<Column name="SearchNum" type ="int" familyName="d" />
+		<Column name="AdvCost" type ="double" familyName="d" />
+		<Column name="SearchRate" type ="double" familyName="d" />
+		<Column name="SearchClickRate" type ="double" familyName="d" />
+	</Table>
+
+	
+
+	<!--IM 店铺咨询概括-->
+	<Table name="HB_SHOP_CONS_STAT" rowkey="int,int">
+		<Column name="ConsNum" type ="int" familyName="d" />
+		<Column name="RespNum" type ="int" familyName="d" />
+		<Column name="NoRespNum" type ="int" familyName="d" />
+	</Table>
+	<Table name="HB_SHOP_CONS_DTL" rowkey="int,int,int">
+		<Column name="ConsNum" type ="int" familyName="d" />
+		<Column name="RespNum" type ="int" familyName="d" />
+		<Column name="NoRespNum" type ="int" familyName="d" />
+		<Column name="PartTime" type ="int" familyName="d" />
+	</Table>
+	<!-- 售后明细分析 -->
+	<Table name="HB_PRO_RPLCMNT" rowkey="int,int">
+		<Column name="OrdID" type ="int" familyName="d" />
+		<Column name="ProID" type ="long" familyName="d" />
+		<Column name="ProName" type ="string" familyName="d" />
+		<Column name="Org" type ="string" familyName="d" />
+		<Column name="OrdTime" type ="int" familyName="d" />
+		<Column name="SaleAmt" type ="double" familyName="d" />
+		<Column name="RepairID" type ="long" familyName="d" />
+		<Column name="ApplyExcTime" type ="int" familyName="d" />
+		<Column name="RepairStat" type ="int" familyName="d" />
+		<Column name="StatTime" type ="int" familyName="d" />
+		<Column name="RepairType" type ="int" familyName="d" />
+		<Column name="ExcReason" type ="int" familyName="d" />
+		<Column name="CusName" type ="string" familyName="d" />
+		<Column name="SPSDelivID" type ="long" familyName="d" />
+		<Column name="Deliverer" type ="string" familyName="d" />
+		<Column name="DelivTime" type ="int" familyName="d" />
+		<Column name="DelivStat" type ="int" familyName="d" />
+		<Column name="SPBarCode" type ="string" familyName="d" />
+		<Column name="ExpCom" type ="string" familyName="d" />
+		<Column name="ExpID" type ="string" familyName="d" />
+	</Table>
+	<!-- 售后清单返修发货表 -->
+	<Table name="HB_PRO_RTN_EX" rowkey="int,int">
+		<Column name="ExOrdID" type ="int" familyName="d" />
+		<Column name="RepairID" type ="long" familyName="d" />
+		<Column name="ExOrdTime" type ="int" familyName="d" />
+		<Column name="ExOrdProID" type ="long" familyName="d" />
+		<Column name="ExOrdProName" type ="string" familyName="d" />
+		<Column name="OriOrdID" type ="long" familyName="d" />
+		<Column name="OriOrdTime" type ="int" familyName="d" />
+		<Column name="OriOrdProID" type ="long" familyName="d" />
+		<Column name="OriOrdProName" type ="string" familyName="d" />
+		<Column name="OriOrdAmt" type ="double" familyName="d" />
+		<Column name="OriOrdStat" type ="int" familyName="d" />
+	</Table>
+	
+	<!-- 关键词分析 -->
+	<Table name="HB_VISIT_KW" rowkey="int,int">
+		<Column name="KW" type ="string" familyName="d" />
+		<Column name="SearchNum" type ="int" familyName="d" />
+		<Column name="SearchMan" type ="int" familyName="d" />
+		<Column name="OrdNum" type ="int" familyName="d" />
+		<Column name="OrdAmt" type ="double" familyName="d" />
+		<Column name="Rate" type ="double" familyName="d" />
+	</Table>
+	
+	<!-- 流量来源分析 -->
+	<Table name="HB_VISIT_SRC" rowkey="int,int">
+		<Column name="SRC" type ="int" familyName="d" />
+		<Column name="PV" type ="int" familyName="d" />
+		<Column name="PVPCNT" type ="double" familyName="d" />
+		<Column name="UV" type ="Int" familyName="d" />
+		<Column name="PageNum" type ="Int" familyName="d" />
+		<Column name="StayTime" type ="double" familyName="d" />
+		<Column name="LostRate" type ="double" familyName="d" />
+	</Table>
+	<!-- 站外来源分析 -->
+	<Table name="HB_VISIT_OUTSRC" rowkey="int,int">
+		<Column name="URL" type ="string" familyName="d" />
+		<Column name="PV" type ="int" familyName="d" />
+		<Column name="PVPCNT" type ="double" familyName="d" />
+		<Column name="UV" type ="Int" familyName="d" />
+		<Column name="PageNum" type ="Int" familyName="d" />
+		<Column name="StayTime" type ="double" familyName="d" />
+		<Column name="LostRate" type ="double" familyName="d" />
+		<Column name="RelPV" type ="int" familyName="d" />
+	</Table>
+	<Table name="HB_EXT_INVENTORY_ANAL" rowkey="int,int,int,int">
+		<Column name="SecondType" type ="int" familyName="d" />
+		<Column name="OrgId" type ="int" familyName="d" />
+		<Column name="Inv45in" type ="int" familyName="d" />
+		<Column name="Inv45out" type ="int" familyName="d" />
+		<Column name="Inv60in" type ="int" familyName="d" />
+		<Column name="Inv60out" type ="int" familyName="d" />
+	</Table>
+	
+	<!--装修趋势分析-->
+	<Table name="HB_DECO_TREND_ANAL" rowkey="int,int">
+		<Column name="PV" type ="int" familyName="d" />
+		<Column name="UPV" type ="int" familyName="d" />
+		<Column name="UV" type ="int" familyName="d" />
+		<Column name="AvgDepth" type ="double" familyName="d" />
+		<Column name="AvgStayTime" type ="double" familyName="d" />
+		<Column name="ProVolRate" type ="double" familyName="d" />
+		<Column name="DecEvent" type ="string" familyName="d" />
+	</Table>
+	
+	<!-- 热力图 -->
+	<Table name="HB_SHOP_SALE_HEAT" rowkey="int,int,int">
+		<Column name="BrowserType" type ="string" familyName="d" />
+		<Column name="ResolutionX" type ="int" familyName="d" />
+		<Column name="ResolutionY" type ="int" familyName="d" />
+		<Column name="PageHeight" type ="int" familyName="d" />
+		<Column name="PageWidth" type ="int" familyName="d" />
+		<Column name="ClientX" type ="int" familyName="d" />
+		<Column name="ClientY" type ="int" familyName="d" />
+		<Column name="ClickCount" type ="int" familyName="d" />
+	</Table>
+</Model>
